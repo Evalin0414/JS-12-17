@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JS -- Number Guessing
+	</title>
+</head>
+<body>
+	<script>
+		
+		function generate(){
+			return Math.floor(Math.random()*10+1);
+		}
+
+		var rand = generate();
+		var guess;
+
+		window.prompt(rand);
+
+		guess = parseInt(window.prompt("Guess a number between 1 to 10"));
+
+		while (rand != guess){
+			guess = window.prompt("Oops! Guess again");
+		}
+
+		alert("Correct!"); 
+
+	</script>
+
+</body>
+</html>
